@@ -1,0 +1,48 @@
+html,
+body,
+h1 {
+  background-color: yellow;
+  margin: 0;
+  padding: 0;
+}
+.box {
+  background-color: white;
+  width: 340px;
+  margin: 20px;
+}
+.dog_img {
+  width: 300px;
+  height: 320px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+.dog_data {
+  position: relative;
+  top: -10px;
+  margin-left: 30px;
+  font-family: '배달의민족 주아';
+  text-align: left;
+  margin-left: 20px;
+  line-height: 30px;
+}
+.button {
+  position: relative;
+  top: -15px;
+  margin-left: 80px;
+}
+.detailed {
+  margin-right: 50px;
+  background-color: gray;
+  font-family: '배달의민족 주아';
+  font-size: 20px;
+  border-radius: 7px;
+  padding: 5px;
+}
+.go_shelter {
+  background-color: yellow;
+  font-family: '배달의민족 주아';
+  font-size: 20px;
+  border-radius: 7px;
+  padding: 5px;
+}

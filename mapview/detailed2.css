@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./mainview.css" />
+    <link rel="stylesheet" href="../common/reset.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Missing Dog | INFO</title>
+  </head>
+  <body>
+      <style>
+          body{
+              background-color: yellow;
+          }
+          .img3{
+        position: relative;
+        left:1100px;
+          }
+          .box{
+              background-color: white;
+              width: 1050px;
+              height: 450px;
+              margin-left: 100px;
+              position: relative;
+                  
+          }
+          
+          .img2{
+              width:35px;
+              margin-left:300px;
+          }
+          .img1{
+              width:35px;
+              margin-left:300px;
+          }
+          .img4{
+              width:35px;
+              margin-left:300px;
+          }
+          
+        .right{
+            margin-left:300px;
+            margin-top:-300px;
+           
+        }
+        .detail{
+            margin:40px;
+            margin-top:50px;
+            margin-left:300px;
+        }
+        
+         .img5{
+             width:500px;
+             margin-left:30px;
+             margin-top: 50px;
+         }
+         .title{
+             margin-left: 300px;
+             margin-top:-360px;
+             font-size: 25pt;
+             
+           
+         }
+        
+      </style>
+        <img src="./img/logo.png", width=100>
+        <img class="img3" src="./img/CategoryIcon.png", width=50>
+        
+
+        <div class="box">
+            <div class="left">
+                <img class="img5" src="./img/photo.jpg", width=300>
+                <div class="right">
+                    <div class = "title">
+                    서울유기동물입양센터
+                    </div>
+                    </div>
+                    </div>
+
+                    <div class="info">
+                        <div class = "detail">
+                        <img class = "img1" src="./img/pin.png">
+                        서울 중랑구 용마산로 139나길 83
+                        </div>
+                        <div class="detail">
+                            <img class= "img2" src="./img/pawprint.png">
+                            유기견 정보 페이지 이동
+                            </div>
+                            <div class="detail">
+                                <img class="img4" src="./img/phone-call.png">
+                                02-6958-6224
+                    </div>
+
+            
+            
+        
+
+
+    </div>
+    <!-- 
+    <img src="./img/각자폴더 내 이미지 파일" alt="">
+    이런식으로 이미지 사용해주세요~
+     -->
+  </body>
+</html>
