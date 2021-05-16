@@ -64,13 +64,13 @@ body,
 }
 .boxLeft{
   float: left;
-  margin-top:50px;
+  margin-top:22px;
   margin-left:50px;
 }
 .boxRight{
   position:relative;
   top:80px;
-  left:60px;
+  left:80px;
 }
 .boxInfo{
   font-size:30px;
