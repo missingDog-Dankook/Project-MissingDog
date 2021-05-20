@@ -56,8 +56,9 @@ body,
     cursor: pointer;
   }
   #map{
-    width:100%;
+    width:80%;
     height:450px;
     clear:both;
-
+    margin-left:122px;
   }
+  
