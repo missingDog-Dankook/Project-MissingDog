@@ -19,20 +19,19 @@ const getValueInput = () => {
       })
 
       var infoWindow = new google.maps.InfoWindow({
-        content: '<h1>용인시 동물보호센터</h1>'+'<br>'
-        +'<span> 경기도 용인시 처인구 중부대로 1074-1</span>',
+        content:
+          '<h1>용인시 동물보호센터</h1>' +
+          '<br>' +
+          '<span> 경기도 용인시 처인구 중부대로 1074-1</span>',
       })
 
       marker.addListener('click', function () {
         infoWindow.open(map, marker)
       })
-    } 
-    else if(mapVal == '한국동물구조관리협회'){
-
+    } else if (mapVal == '한국동물구조관리협회') {
       var options = {
-        zoom : 13,
-        center :
-        { lat : 37.88834241791307, lng : 126.96784410558472}
+        zoom: 13,
+        center: { lat: 37.88834241791307, lng: 126.96784410558472 },
       }
 
       var map = new google.maps.Map(document.getElementById('map'), options)
@@ -43,44 +42,41 @@ const getValueInput = () => {
       })
 
       var infoWindow = new google.maps.InfoWindow({
-        content: '<h1>한국동물구조관리협회</h1>'+'<br>'
-        +'<span> 경기도 양주시 남면 상수리 410-1</span>',
+        content:
+          '<h1>한국동물구조관리협회</h1>' +
+          '<br>' +
+          '<span> 경기도 양주시 남면 상수리 410-1</span>',
       })
 
       marker.addListener('click', function () {
         infoWindow.open(map, marker)
       })
-    } 
-    
-
-    else if(mapVal == '서초동물사랑센터'){
-
+    } else if (mapVal == '서초동물사랑센터') {
       var options = {
-        zoom : 13,
-        center : { lat : 37.47649385428486, lng : 127.03812409711139}
+        zoom: 13,
+        center: { lat: 37.47649385428486, lng: 127.03812409711139 },
       }
       var map = new google.maps.Map(document.getElementById('map'), options)
 
       var marker = new google.maps.Marker({
-        position: { lat: 37.47649385428486, lng: 127.03812409711139},
+        position: { lat: 37.47649385428486, lng: 127.03812409711139 },
         map: map,
       })
 
       var infoWindow = new google.maps.InfoWindow({
-        content: '<h1>서초동물사랑센터</h1>'+'<br>'
-        +'<span> 경기도 양주시 남면 상수리 410-1</span>',
+        content:
+          '<h1>서초동물사랑센터</h1>' +
+          '<br>' +
+          '<span> 경기도 양주시 남면 상수리 410-1</span>',
       })
 
       marker.addListener('click', function () {
         infoWindow.open(map, marker)
       })
-    }
-
-    
-    else if(mapVal == '펫토피아 동물병원'){
+    } else if (mapVal == '펫토피아 동물병원') {
       var options = {
-        zoom : 13,
-        center : { lat : 37.366963218030065, lng : 127.1272355952546}
+        zoom: 13,
+        center: { lat: 37.366963218030065, lng: 127.1272355952546 },
       }
       var map = new google.maps.Map(document.getElementById('map'), options)
 
@@ -90,31 +86,54 @@ const getValueInput = () => {
       })
 
       var infoWindow = new google.maps.InfoWindow({
-        content: '<h1>펫토피아 동물병원</h1>'+'<br>'
-        +'<span> 경기도 양주시 남면 상수리 410-1</span>',
+        content:
+          '<h1>펫토피아 동물병원</h1>' +
+          '<br>' +
+          '<span> 경기도 양주시 남면 상수리 410-1</span>',
       })
 
       marker.addListener('click', function () {
         infoWindow.open(map, marker)
       })
-    }
-
-    else if(mapVal == '하남 동물병원'){
-
+    } else if (mapVal == '하남 동물병원') {
       var options = {
-        zoom : 13,
-        center : { lat : 37.53729551504241, lng : 127.20411285478585}
+        zoom: 13,
+        center: { lat: 37.53729551504241, lng: 127.20411285478585 },
       }
       var map = new google.maps.Map(document.getElementById('map'), options)
 
       var marker = new google.maps.Marker({
-        position: { lat: 37.53729551504241, lng: 127.20411285478585},
+        position: { lat: 37.53729551504241, lng: 127.20411285478585 },
         map: map,
       })
 
       var infoWindow = new google.maps.InfoWindow({
-        content: '<h1>한국동물구조관리협회</h1>'+'<br>'
-        +'<span> 경기도 양주시 남면 상수리 410-1</span>',
+        content:
+          '<h1>한국동물구조관리협회</h1>' +
+          '<br>' +
+          '<span> 경기도 양주시 남면 상수리 410-1</span>',
+      })
+
+      marker.addListener('click', function () {
+        infoWindow.open(map, marker)
+      })
+    } else if (mapVal == '평택시 유기동물 보호소') {
+      var options = {
+        zoom: 13,
+        center: { lat: 37.13105298946498, lng: 127.05554022593407 },
+      }
+      var map = new google.maps.Map(document.getElementById('map'), options)
+
+      var marker = new google.maps.Marker({
+        position: { lat: 37.13105298946498, lng: 127.05554022593407 },
+        map: map,
+      })
+
+      var infoWindow = new google.maps.InfoWindow({
+        content:
+          '<h1>한국동물구조관리협회</h1>' +
+          '<br>' +
+          '<span> 경기도 양주시 남면 상수리 410-1</span>',
       })
 
       marker.addListener('click', function () {
@@ -122,50 +141,6 @@ const getValueInput = () => {
       })
     }
 
-    // else if(mapVal == '용인시 동물보호센터'){
-
-    //   var options = { 
-    //     zoom : 13,
-    //     center = {lat : 37.243555184654106, lng : 127.15910152408595}
-    //   }
-
-    //   var map = new google.maps.Map(document.getElementById('map'), options)
-
-    //   var marker = new google.maps.Marker({
-    //     position: { lat: 37.243555184654106, lng: 127.15910152408595},
-    //     map: map,
-    //   })
-
-    //   var infoWindow = new google.maps.InfoWindow({
-    //     content: '<h1>한국동물구조관리협회</h1>'+'<br>'
-    //     +'<span> 경기도 양주시 남면 상수리 410-1</span>',
-    //   })
-
-    //   marker.addListener('click', function () {
-    //     infoWindow.open(map, marker)
-    //   })
-    // }
-    // else if(mapVal == '평택시 유기동물 보호소'){
-    //   var options = {
-    //     zoom : 13,
-    //     center : {lat : 37.13105298946498, lng : 127.05554022593407}
-    //   }
-    //   var map = new google.maps.Map(document.getElementById('map'), options)
-
-    //   var marker = new google.maps.Marker({
-    //     position: { lat: 37.13105298946498, lng: 127.05554022593407},
-    //     map: map,
-    //   })
-
-    //   var infoWindow = new google.maps.InfoWindow({
-    //     content: '<h1>한국동물구조관리협회</h1>'+'<br>'
-    //     +'<span> 경기도 양주시 남면 상수리 410-1</span>',
-    //   })
-
-    //   marker.addListener('click', function () {
-    //     infoWindow.open(map, marker)
-    //   })
-    // }
     // else if(mapVal == '충주시 동물보호센터'){
     //   var options= {
     //     zoom : 13,
@@ -292,7 +267,7 @@ const getValueInput = () => {
     //   marker.addListener('click', function () {
     //     infoWindow.open(map, marker)
     //   })
-      
+
     // }
     // else if(mapVal == '대구 유기동물보호센터'){
     //   var options = {
@@ -314,9 +289,8 @@ const getValueInput = () => {
     //   marker.addListener('click', function () {
     //     infoWindow.open(map, marker)
     //   })
-      
+
     // }
-    
     else {
       document.getElementById('valueInput').innerHTML =
         inputValue + '를 찾을 수 없습니다.'
