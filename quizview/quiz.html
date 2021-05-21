@@ -36,10 +36,18 @@
             <span>1. 다음 중 불안하다는 카밍 시그널이 아닌것은?</span>
           </div>
           <div class="quizItemContent">
-            <span class="quizNumber" id="quiz1_1" onclick="selectAnswer()"> 1. 시선을 피해요 </span>
-            <span class="quizNumber" id="quiz1_2" onclick="selectAnswer()"> 2. 코를 낼름낼름 핥아요</span>
-            <span class="quizNumber" id="quiz1_3" onclick="selectAnswer()"> 3. 하품을 해요</span>
-            <span class="quizNumber" id="answer1" onclick="selectAnswer()"> 4. 재채기를 해요</span>
+            <span class="quizNumber" id="quiz1_1" onclick="selectAnswer()">
+              1. 시선을 피해요
+            </span>
+            <span class="quizNumber" id="quiz1_2" onclick="selectAnswer()">
+              2. 코를 낼름낼름 핥아요</span
+            >
+            <span class="quizNumber" id="quiz1_3" onclick="selectAnswer()">
+              3. 하품을 해요</span
+            >
+            <span class="quizNumber" id="answer1" onclick="selectAnswer()">
+              4. 재채기를 해요</span
+            >
           </div>
           <div class="quizItemButton">
             <button onclick="showAnswer1()">결과보기</button>
@@ -51,21 +59,15 @@
                 var x3 = document.getElementById('quiz1_3')
                 var x4 = document.getElementById('answer1')
 
-                if(item=='1') 
-                {
-                  x1.style.backgroundColor = "f8e004"
-                  x2.style.backgroundColor = "ffffff"
-                  x3.style.backgroundColor = "ffffff"
-                  x4.style.backgroundColor = "ffffff"
-                }
-                else if(item=='2') {
-                  
-                }
-                else if(item=='3'){
-
+                if (item == '1') {
+                  x1.style.backgroundColor = 'f8e004'
+                  x2.style.backgroundColor = 'ffffff'
+                  x3.style.backgroundColor = 'ffffff'
+                  x4.style.backgroundColor = 'ffffff'
+                } else if (item == '2') {
+                } else if (item == '3') {
                 }
               }
-              
 
               function showAnswer1() {
                 var x = document.getElementById('answer1')
@@ -80,10 +82,18 @@
             <span>2. 강아지가 절대 먹으면 안되는 음식은?</span>
           </div>
           <div class="quizItemContent">
-            <span class="quizNumber" id="quiz2_1" onclick="selectAnswer()"> 1. 수박</span>
-            <span class="quizNumber" id="quiz2_2" onclick="selectAnswer()"> 2. 두부</span>
-            <span class="quizNumber" id="answer2" onclick="selectAnswer()"> 3. 포도</span>
-            <span class="quizNumber" id="quiz2_4" onclick="selectAnswer()"> 4. 오이</span>
+            <span class="quizNumber" id="quiz2_1" onclick="selectAnswer(1)">
+              1. 수박</span
+            >
+            <span class="quizNumber" id="quiz2_2" onclick="selectAnswer(2)">
+              2. 두부</span
+            >
+            <span class="quizNumber" id="answer2" onclick="selectAnswer(3)">
+              3. 포도</span
+            >
+            <span class="quizNumber" id="quiz2_4" onclick="selectAnswer(4)">
+              4. 오이</span
+            >
           </div>
           <div class="quizItemButton">
             <button onclick="showAnswer2()">결과보기</button>
@@ -101,19 +111,21 @@
             <span>3.털이 많이 빠지는 견종은?</span>
           </div>
           <div class="quizItemContent">
-            <span class="quizNumber" id="answer3" onclick="selectAnswer()"> 1. 웰시코기</span>
-            <span class="quizNumber" id="quiz3_2" onclick="selectAnswer()"> 2. 요크셔테리어</span>
-            <span class="quizNumber" id="quiz3_3" onclick="selectAnswer()"> 3. 말티즈</span>
-            <span class="quizNumber" id="quiz3_4" onclick="selectAnswer()"> 4. 슈나우저</span>
+            <span class="quizNumber" id="answer3" onclick="selectAnswer()">
+              1. 웰시코기</span
+            >
+            <span class="quizNumber" id="quiz3_2" onclick="selectAnswer()">
+              2. 요크셔테리어</span
+            >
+            <span class="quizNumber" id="quiz3_3" onclick="selectAnswer()">
+              3. 말티즈</span
+            >
+            <span class="quizNumber" id="quiz3_4" onclick="selectAnswer()">
+              4. 슈나우저</span
+            >
           </div>
           <div class="quizItemButton">
             <button onclick="showAnswer3()">결과보기</button>
-            <script>
-              function showAnswer3() {
-                var x = document.getElementById('answer3')
-                x.style.backgroundColor = 'orange'
-              }
-            </script>
           </div>
         </div>
 
@@ -125,7 +137,9 @@
             <span class="quizNumber" id="quiz4_1" onclick="selectAnswer()">
               1. 소변에 내용물이 있거나 피가 섞여 나오는 경우</span
             >
-            <span class="quizNumber" id="quiz4_2" onclick="selectAnswer()"> 2. 3일 이상 변을 보지 않는 경우</span>
+            <span class="quizNumber" id="quiz4_2" onclick="selectAnswer()">
+              2. 3일 이상 변을 보지 않는 경우</span
+            >
             <span class="quizNumber" id="quiz4_3" onclick="selectAnswer()">
               3. 잇몸이나 혀가 평소보다 하얀 편일 경우</span
             >
@@ -136,6 +150,51 @@
           <div class="quizItemButton">
             <button onclick="showAnswer4()">결과보기</button>
             <script>
+              function selectAnswer(num) {
+                if (num === 1) {
+                  document.getElementById('quiz2_1').style.backgroundColor =
+                    '#f8e004'
+                  document.getElementById('quiz2_2').style.backgroundColor =
+                    '#fff'
+                  document.getElementById('answer2').style.backgroundColor =
+                    '#fff'
+                  document.getElementById('quiz2_4').style.backgroundColor =
+                    '#fff'
+                } else if (num === 2) {
+                  document.getElementById('quiz2_2').style.backgroundColor =
+                    '#f8e004'
+                  document.getElementById('quiz2_1').style.backgroundColor =
+                    '#fff'
+                  document.getElementById('answer2').style.backgroundColor =
+                    '#fff'
+                  document.getElementById('quiz2_4').style.backgroundColor =
+                    '#fff'
+                } else if (num === 3) {
+                  document.getElementById('answer2').style.backgroundColor =
+                    '#f8e004'
+                  document.getElementById('quiz2_1').style.backgroundColor =
+                    '#fff'
+                  document.getElementById('quiz2_4').style.backgroundColor =
+                    '#fff'
+                  document.getElementById('quiz2_2').style.backgroundColor =
+                    '#fff'
+                } else {
+                  document.getElementById('quiz2_4').style.backgroundColor =
+                    '#f8e004'
+                  document.getElementById('quiz2_1').style.backgroundColor =
+                    '#fff'
+                  document.getElementById('answer2').style.backgroundColor =
+                    '#fff'
+                  document.getElementById('quiz2_2').style.backgroundColor =
+                    '#fff'
+                }
+              }
+
+              function showAnswer3() {
+                var x = document.getElementById('answer3')
+                x.style.backgroundColor = 'orange'
+              }
+
               function showAnswer4() {
                 var x = document.getElementById('answer4')
                 x.style.backgroundColor = 'orange'
