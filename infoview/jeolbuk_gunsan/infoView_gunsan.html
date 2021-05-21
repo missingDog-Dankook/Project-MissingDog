@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script type="text/javascript" src="../infoView.js"></script>
     <link rel="stylesheet" href="../infoView.css" />
     <link rel="stylesheet" href="../../common/reset.css" />
     <meta charset="UTF-8" />
@@ -32,8 +33,22 @@
 
     <h3>보호된 아이들</h3><br>
     <div id="search">
-      <input type="text" class="search_input" placeholder=" 보호소 검색">
-      <input type="button" class="img_button">
+      <select class="search_input" id = "select_list" name="보호소 리스트">
+        <option value="0">보호소를 선택해주세요</option>
+        <option value="1">서울시 서초구 보호소</option>
+        <option value="2">서울시 송파구 보호소</option>
+        <option value="3">경기도 성남시 보호소</option>
+        <option value="4">경기도 하남시 보호소</option>
+        <option value="5">경기도 평택시 보호소</option>
+        <option value="6">경기도 용인시 보호소</option>
+        <option value="7">충청남도 서산시 보호소</option>
+        <option value="8">충청북도 충주시 보호소</option>
+        <option value="9">전라남도 강진군 보호소</option>
+        <option value="10">전라북도 군산시</option>
+        <option value="11">대구 달서구 보호소</option>
+        <option value="12">강원도 보호소</option>
+      </select>
+      <input type="button" onclick="gotoSelect();" class="img_button">
     </div>
         <p id="shelter_name">군산 유기견 보호 센터</p>
 
