@@ -1,3 +1,12 @@
+@font-face {
+  font-family: '배달의민족 주아';
+  src: url('../defaultDesign/BMJUA_otf.otf');
+  src: url('../defaultDesign/BMJUA_ttf.ttf');
+}
+* {
+  font-family: '배달의민족 주아' !important;
+}
+
 a {
   text-decoration: none;
 }
