@@ -63,6 +63,7 @@ header img {
 .inputWrapper {
   width: 100%;
   /* height: 30vh; */
+  /* margin-top: 250px; */
   /* border: 1px solid red; */
   display: flex;
   align-items: center;
@@ -83,6 +84,22 @@ header img {
   border: 2px solid black;
   border-radius: 10px;
   cursor: pointer;
+  margin-bottom: 10vh;
+}
+
+.menuTitle {
+  width: 100%;
+  height: 20vh;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuTitle span {
+  font-size: 32px;
+  font-weight: 600;
 }
 
 .inputWrapper button:hover {
