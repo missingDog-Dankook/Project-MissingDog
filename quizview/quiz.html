@@ -36,7 +36,7 @@
             <span>1. 다음 중 불안하다는 카밍 시그널이 아닌것은?</span>
           </div>
           <div class="quizItemContent">
-            <span class="quizNumber">
+            <span class="quizNumber" onclick="selectAnswer()">
               1. 시선을 피해요
             </span
             >
@@ -53,6 +53,11 @@
           <div class="quizItemButton">
             <button onclick="showAnswer1()">결과보기</button>
             <script>
+              function selectAnswer() {
+                var x = documnet.getElementByClassName("quizNumber");
+                x.
+              }
+
               function showAnswer1(){
                 var x = document.getElementById("answer1");
                 x.style.backgroundColor = "orange";
