@@ -111,3 +111,7 @@ header img {
 input:focus {
   outline: none;
 }
+
+.warnning {
+  margin-bottom: 20px;
+}
