@@ -1,7 +1,7 @@
-@font-face{ 
-font-family:'배달의민족 주아'; 
-src:url("../defaultDesign/BMJUA_otf.otf"); 
-src:url("../defaultDesign/BMJUA_ttf.ttf"); 
+@font-face {
+  font-family: '배달의민족 주아';
+  src: url('../defaultDesign/BMJUA_otf.otf');
+  src: url('../defaultDesign/BMJUA_ttf.ttf');
 }
 
 html,
@@ -58,10 +58,10 @@ hr {
   border-color: #f8e004;
 }
 h3 {
-  font-family: '배달의민족 주아'!important;
+  font-family: '배달의민족 주아' !important;
   text-align: center;
-  font-weight: bold!important;
-  font-size: 1.5em!important;
+  font-weight: bold !important;
+  font-size: 1.5em !important;
   margin-top: 100px;
   margin-bottom: 0px;
 }

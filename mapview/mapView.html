@@ -3,16 +3,15 @@
   <head>
     <link rel="stylesheet" href="./mapView.css" />
     <link rel="stylesheet" href="../common/reset.css" />
-  
+
     <meta charset="UTF-8" />
     <title>Missing Dog | mapView</title>
-  <script src="mapView.js"></script>
+    <script src="mapView.js"></script>
   </head>
 
-  
   <body>
-  <div class="mainWrapper">
-    <div class="mainHeader">
+    <div class="mainWrapper">
+      <div class="mainHeader">
         <div class="logoImg">
           <a href="../mainview/mainView.html">
             <img src="./img/logo.png" alt="" />
@@ -22,11 +21,22 @@
           <img src="../mapview/img/CategoryIcon.png" alt="" />
         </div>
       </div>
-    
-    <div id="map"></div>
-    
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArlU7szSMtzwmtSlnz0rgguaqaH8bPRp8&callback=initMap">
-      </script>
+      <div class="inputWrapper">
+        <form action="">
+          <input type="text" id="domTextElement" />
+          <button type="button" onclick="getValueInput()">검색</button>
+          <p id="valueInput"></p>
+        </form>
       </div>
-    </body>
-    </html>
+
+      <div id="map"></div>
+
+      <script
+        async
+        defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArlU7szSMtzwmtSlnz0rgguaqaH8bPRp8&callback=initMap"
+      ></script>
+      <script></script>
+    </div>
+  </body>
+</html>

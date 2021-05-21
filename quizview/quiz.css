@@ -20,9 +20,9 @@
   cursor: pointer;
 }
 
-.mainHeader .menuWrapper i {
+.mainHeader .menuWrapper img {
   display: block;
-  font-size: 25px;
+  width: 30px;
   margin-right: 30px;
   cursor: pointer;
 }
