@@ -31,7 +31,7 @@
       </div>
 
       <div class="quizContents">
-        <div class="quizItem">
+        <div class="quizItem" id="quizItem1">
           <div class="quizItemTitle">
             <span>1. 다음 중 불안하다는 카밍 시그널이 아닌것은?</span>
           </div>
@@ -54,7 +54,7 @@
           </div>
         </div>
 
-        <div class="quizItem">
+        <div class="quizItem" id="quizItem2">
           <div class="quizItemTitle">
             <span>2. 강아지가 절대 먹으면 안되는 음식은?</span>
           </div>
@@ -77,7 +77,7 @@
           </div>
         </div>
 
-        <div class="quizItem">
+        <div class="quizItem" id="quizItem3">
           <div class="quizItemTitle">
             <span>3.털이 많이 빠지는 견종은?</span>
           </div>
@@ -100,7 +100,7 @@
           </div>
         </div>
 
-        <div class="quizItem">
+        <div class="quizItem" id="quizItem4">
           <div class="quizItemTitle">
             <span>4. 동물병원에 꼭 가야하는 상황이 아닌 것은?</span>
           </div>
@@ -120,187 +120,202 @@
           </div>
           <div class="quizItemButton">
             <button onclick="showAnswer4()">결과보기</button>
-            <script>
-              function selectAnswer1(num) {
-                if (num === 1) {
-                  document.getElementById('quiz1_1').style.backgroundColor =
-                    '#f8e004'
-                  document.getElementById('quiz1_2').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('quiz1_3').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('answer1').style.backgroundColor =
-                    '#fff'
-                } else if (num === 2) {
-                  document.getElementById('quiz1_1').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('quiz1_2').style.backgroundColor =
-                    '#f8e004'
-                  document.getElementById('quiz1_3').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('answer1').style.backgroundColor =
-                    '#fff'
-                } else if (num === 3) {
-                  document.getElementById('quiz1_1').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('quiz1_2').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('quiz1_3').style.backgroundColor =
-                    '#f8e004'
-                  document.getElementById('answer1').style.backgroundColor =
-                    '#fff'
-                } else if(num === 4){
-                  document.getElementById('quiz1_1').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('quiz1_2').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('quiz1_3').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('answer1').style.backgroundColor =
-                    '#f8e004'
-                }
-              }
-              function selectAnswer2(num) {
-                if (num === 1) {
-                  document.getElementById('quiz2_1').style.backgroundColor =
-                    '#f8e004'
-                  document.getElementById('quiz2_2').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('answer2').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('quiz2_4').style.backgroundColor =
-                    '#fff'
-                } else if (num === 2) {
-                  document.getElementById('quiz2_2').style.backgroundColor =
-                    '#f8e004'
-                  document.getElementById('quiz2_1').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('answer2').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('quiz2_4').style.backgroundColor =
-                    '#fff'
-                } else if (num === 3) {
-                  document.getElementById('answer2').style.backgroundColor =
-                    '#f8e004'
-                  document.getElementById('quiz2_1').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('quiz2_4').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('quiz2_2').style.backgroundColor =
-                    '#fff'
-                } else {
-                  document.getElementById('quiz2_4').style.backgroundColor =
-                    '#f8e004'
-                  document.getElementById('quiz2_1').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('answer2').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('quiz2_2').style.backgroundColor =
-                    '#fff'
-                }
-              }
-
-              function selectAnswer3(num) {
-                if (num === 1) {
-                  document.getElementById('quiz3_1').style.backgroundColor =
-                    '#f8e004'
-                  document.getElementById('quiz3_2').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('answer3').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('quiz3_4').style.backgroundColor =
-                    '#fff'
-                } else if (num === 2) {
-                  document.getElementById('quiz3_2').style.backgroundColor =
-                    '#f8e004'
-                  document.getElementById('quiz3_1').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('answer3').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('quiz3_4').style.backgroundColor =
-                    '#fff'
-                } else if (num === 3) {
-                  document.getElementById('answer3').style.backgroundColor =
-                    '#f8e004'
-                  document.getElementById('quiz3_1').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('quiz3_4').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('quiz3_2').style.backgroundColor =
-                    '#fff'
-                } else {
-                  document.getElementById('quiz3_4').style.backgroundColor =
-                    '#f8e004'
-                  document.getElementById('quiz3_1').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('answer3').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('quiz3_2').style.backgroundColor =
-                    '#fff'
-                }
-              }
-              function selectAnswer4(num) {
-                if (num === 1) {
-                  document.getElementById('quiz4_1').style.backgroundColor =
-                    '#f8e004'
-                  document.getElementById('quiz4_2').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('answer4').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('quiz4_4').style.backgroundColor =
-                    '#fff'
-                } else if (num === 2) {
-                  document.getElementById('quiz4_2').style.backgroundColor =
-                    '#f8e004'
-                  document.getElementById('quiz4_1').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('answer4').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('quiz4_4').style.backgroundColor =
-                    '#fff'
-                } else if (num === 3) {
-                  document.getElementById('answer4').style.backgroundColor =
-                    '#f8e004'
-                  document.getElementById('quiz4_1').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('quiz4_4').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('quiz4_2').style.backgroundColor =
-                    '#fff'
-                } else {
-                  document.getElementById('quiz4_4').style.backgroundColor =
-                    '#f8e004'
-                  document.getElementById('quiz4_1').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('answer4').style.backgroundColor =
-                    '#fff'
-                  document.getElementById('quiz4_2').style.backgroundColor =
-                    '#fff'
-                }
-              }
-
-              function showAnswer1() {
-                var x = document.getElementById('answer1')
-                x.style.backgroundColor = 'orange'
-              }
-
-              function showAnswer2() {
-                var x = document.getElementById('answer2')
-                x.style.backgroundColor = 'orange'
-              }
-
-              function showAnswer3() {
-                var x = document.getElementById('answer3')
-                x.style.backgroundColor = 'orange'
-              }
-
-              function showAnswer4() {
-                var x = document.getElementById('answer4')
-                x.style.backgroundColor = 'orange'
-              }
-            </script>
           </div>
         </div>
+
+        <script>
+          var correct = [0,0,0,0]
+          function selectAnswer1(num) {
+            if (num === 1) {
+              document.getElementById('quiz1_1').style.backgroundColor =
+                '#f8e004'
+              document.getElementById('quiz1_2').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz1_3').style.backgroundColor =
+                '#fff'
+              document.getElementById('answer1').style.backgroundColor =
+                '#fff'
+            } else if (num === 2) {
+              document.getElementById('quiz1_1').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz1_2').style.backgroundColor =
+                '#f8e004'
+              document.getElementById('quiz1_3').style.backgroundColor =
+                '#fff'
+              document.getElementById('answer1').style.backgroundColor =
+                '#fff'
+            } else if (num === 3) {
+              document.getElementById('quiz1_1').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz1_2').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz1_3').style.backgroundColor =
+                '#f8e004'
+              document.getElementById('answer1').style.backgroundColor =
+                '#fff'
+            } else if(num === 4){
+              document.getElementById('quiz1_1').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz1_2').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz1_3').style.backgroundColor =
+                '#fff'
+              document.getElementById('answer1').style.backgroundColor =
+                '#f8e004'
+              correct[0]=1
+            }
+          }
+          function selectAnswer2(num) {
+            if (num === 1) {
+              document.getElementById('quiz2_1').style.backgroundColor =
+                '#f8e004'
+              document.getElementById('quiz2_2').style.backgroundColor =
+                '#fff'
+              document.getElementById('answer2').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz2_4').style.backgroundColor =
+                '#fff'
+            } else if (num === 2) {
+              document.getElementById('quiz2_2').style.backgroundColor =
+                '#f8e004'
+              document.getElementById('quiz2_1').style.backgroundColor =
+                '#fff'
+              document.getElementById('answer2').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz2_4').style.backgroundColor =
+                '#fff'
+            } else if (num === 3) {
+              document.getElementById('answer2').style.backgroundColor =
+                '#f8e004'
+              document.getElementById('quiz2_1').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz2_4').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz2_2').style.backgroundColor =
+                '#fff'
+              correct[1]=1
+            } else if(num === 4) {
+              document.getElementById('quiz2_4').style.backgroundColor =
+                '#f8e004'
+              document.getElementById('quiz2_1').style.backgroundColor =
+                '#fff'
+              document.getElementById('answer2').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz2_2').style.backgroundColor =
+                '#fff'
+            }
+          }
+
+          function selectAnswer3(num) {
+            if (num === 1) {
+              document.getElementById('answer3').style.backgroundColor =
+                '#f8e004'
+              document.getElementById('quiz3_2').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz3_3').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz3_4').style.backgroundColor =
+                '#fff'
+                correct[2]=1
+            } else if (num === 2) {
+              document.getElementById('answer3').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz3_2').style.backgroundColor =
+                '#f8e004'
+              document.getElementById('quiz3_3').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz3_4').style.backgroundColor =
+                '#fff'
+            } else if (num === 3) {
+              document.getElementById('answer3').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz3_2').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz3_3').style.backgroundColor =
+                '#f8e004'
+              document.getElementById('quiz3_4').style.backgroundColor =
+                '#fff'
+            } else if(num === 4) {
+              document.getElementById('answer3').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz3_2').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz3_3').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz3_4').style.backgroundColor =
+                '#f8e004'
+            }
+          }
+          function selectAnswer4(num) {
+            if (num === 1) {
+              document.getElementById('quiz4_1').style.backgroundColor =
+                '#f8e004'
+              document.getElementById('quiz4_2').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz4_3').style.backgroundColor =
+                '#fff'
+              document.getElementById('answer4').style.backgroundColor =
+                '#fff'
+            } else if (num === 2) {
+              document.getElementById('quiz4_1').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz4_2').style.backgroundColor =
+                '#f8e004'
+              document.getElementById('quiz4_3').style.backgroundColor =
+                '#fff'
+              document.getElementById('answer4').style.backgroundColor =
+                '#fff'
+            } else if (num === 3) {
+              document.getElementById('quiz4_1').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz4_2').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz4_3').style.backgroundColor =
+                '#f8e004'
+              document.getElementById('answer4').style.backgroundColor =
+                '#fff'
+            } else if(num === 4) {
+              document.getElementById('quiz4_1').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz4_2').style.backgroundColor =
+                '#fff'
+              document.getElementById('quiz4_3').style.backgroundColor =
+                '#fff'
+              document.getElementById('answer4').style.backgroundColor =
+                '#f8e004'
+                correct[3]=1
+            }
+          }
+
+          function showAnswer1() {
+            var innerbox = document.getElementById('answer1')
+            var outterbox = document.getElementById('quizItem1')
+            innerbox.style.backgroundColor = 'orange'
+            if(correct[0]==0) { outterbox.style.backgroundColor = 'crimson' }
+          }
+
+          function showAnswer2() {
+            var innerbox = document.getElementById('answer2')
+            var outterbox = document.getElementById('quizItem2')
+            innerbox.style.backgroundColor = 'orange'
+            if(correct[1]==0) { outterbox.style.backgroundColor = 'crimson' }
+          }
+
+          function showAnswer3() {
+            var innerbox = document.getElementById('answer3')
+            var outterbox = document.getElementById('quizItem3')
+            innerbox.style.backgroundColor = 'orange'
+            if(correct[2]==0) { outterbox.style.backgroundColor = 'crimson' }
+          }
+
+          function showAnswer4() {
+            var innerbox = document.getElementById('answer4')
+            var outterbox = document.getElementById('quizItem4')
+            innerbox.style.backgroundColor = 'orange'
+            if(correct[3]==0) { outterbox.style.backgroundColor = 'crimson' }
+          }
+        </script>
+
       </div>
     </div>
   </body>
