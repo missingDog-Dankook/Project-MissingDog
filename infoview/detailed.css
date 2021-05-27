@@ -7,7 +7,7 @@ src:url("../defaultDesign/BMJUA_ttf.ttf");
 html,
 body,
 h1 {
-  background-color: yellow;
+  background-color: #f8e004;
   margin: 0;
   padding: 0;
 }
