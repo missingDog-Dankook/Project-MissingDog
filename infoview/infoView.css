@@ -101,6 +101,7 @@ input.img_button {
   margin-top: 20px;
 }
 .box_wrap {
+  margin-top: 10px!important;
   display: table;
   width: 90%;
   margin: 0 auto;
