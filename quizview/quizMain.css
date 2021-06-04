@@ -139,8 +139,9 @@ footer {
   width: 150px;
   height: 30px;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: #f8e004;
   border: 1px solid black;
+  font-weight: bold;
 }
 
 /* 여기부터 추가 */
