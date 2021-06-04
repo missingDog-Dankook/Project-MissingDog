@@ -1,0 +1,28 @@
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8e004;
+}
+
+.wrapper span {
+  /* display: block; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 70px;
+  border: 4px solid #fff;
+  border-radius: 15px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+  cursor: pointer;
+}
+
+.wrapper span:hover {
+  background-color: #fff;
+  color: #f8e004;
+}
