@@ -4,7 +4,19 @@
     <meta charset="UTF-8" />
     <title>MissingDog_Edu&QuizSelect</title>
     <link rel="stylesheet" href="./quizMain.css" />
-
+    <script type="text/javascript" src="./quiz.js"></script>
+    <style type="text/css">
+      a:link {
+        color: black;
+        text-decoration: none;
+      }
+      a:visited {
+        color: black;
+        text-decoration: none;
+      }
+      a:hover {
+      }
+    </style>
   </head>
 
   <body>
@@ -17,13 +29,38 @@
       </header> -->
 
       <div class="mainHeader">
+        <div class="navbar">
+          <div class="menu-button">
+            <input
+              id="dropdown-button"
+              type="checkbox"
+              class="dropdown-toggle"
+            />
+            <label class="dropdown-label" for="dropdown-button"></label>
+
+            <div class="menu-slide-from-left" id="menu">
+              <div class="inner-menu-slide-from-left">
+                <div class="button-members"></div>
+                <a href="../mainview/mainView.html">
+                  <div class="menu-options">Home</div>
+                </a>
+                <a href="../infoview/infoView_main.html">
+                  <div class="menu-options">Info</div>
+                </a>
+                <a href="../quizview/quizVideo.html">
+                  <div class="menu-options">Video</div>
+                </a>
+                <a href="../quizview/quizMain.html">
+                  <div class="menu-options">Quiz</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="logoImg">
           <a href="../mainview/mainView.html">
             <img src="./img/logo.png" alt="" />
           </a>
-        </div>
-        <div class="menuWrapper">
-          <img src="../quizview/img/CategoryIcon.png" alt="" />
         </div>
       </div>
       <div class="cardWrapper">
@@ -31,9 +68,15 @@
           <h3>교육 동영상</h3>
           <div class="contentsWrapper">
             <h5>배우러 가요~</h5>
-            <img id="edulogo" src="./img/edulogo.png" width="200" height="200" />
+            <img
+              id="edulogo"
+              src="./img/edulogo.png"
+              width="200"
+              height="200"
+            />
+
             <a href="./quizVideo.html">
-              <button class="button">동영상 보러가기</button>
+              <button class="buttont">동영상 보러가기</button>
             </a>
           </div>
         </section>
@@ -49,7 +92,7 @@
               height="200"
             />
             <a href="./quiz.html"
-              ><button class="button">퀴즈 풀러가기</button></a
+              ><button class="buttont">퀴즈 풀러가기</button></a
             >
           </div>
         </section>

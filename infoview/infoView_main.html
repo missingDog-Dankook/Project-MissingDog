@@ -12,6 +12,19 @@
       crossorigin="anonymous"
     />
     <title>Missing Dog | INFO</title>
+    <script type="text/javascript" src="./infoView_main.js"></script>
+    <style type="text/css">
+      a:link {
+        color: black;
+        text-decoration: none;
+      }
+      a:visited {
+        color: black;
+        text-decoration: none;
+      }
+      a:hover {
+      }
+    </style>
   </head>
   <body>
     <!-- <header>
@@ -20,123 +33,169 @@
     </header>
     <hr> -->
     <div class="mainHeader">
+      <div class="navbar">
+        <div class="menu-button">
+          <input id="dropdown-button" type="checkbox" class="dropdown-toggle" />
+          <label class="dropdown-label" for="dropdown-button"></label>
+
+          <div class="menu-slide-from-left" id="menu">
+            <div class="inner-menu-slide-from-left">
+              <div class="button-members"></div>
+              <a href="./mainView.html">
+                <div class="menu-options">Home</div>
+              </a>
+              <a href="../infoview/infoView_main.html">
+                <div class="menu-options">Info</div>
+              </a>
+              <a href="../quizview/quizVideo.html">
+                <div class="menu-options">Video</div>
+              </a>
+              <a href="../quizview/quizMain.html">
+                <div class="menu-options">Quiz</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar">
+        <div class="menu-button">
+          <input id="dropdown-button" type="checkbox" class="dropdown-toggle" />
+          <label class="dropdown-label" for="dropdown-button"></label>
+
+          <div class="menu-slide-from-left" id="menu">
+            <div class="inner-menu-slide-from-left">
+              <div class="button-members"></div>
+              <a href="../mainview/mainView.html">
+                <div class="menu-options">Home</div>
+              </a>
+              <a href="../infoview/infoView_main.html">
+                <div class="menu-options">Info</div>
+              </a>
+              <a href="../quizview/quizVideo.html">
+                <div class="menu-options">Video</div>
+              </a>
+              <a href="../quizview/quiz.html">
+                <div class="menu-options">Quiz</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="logoImg">
         <a href="../mainview/mainView.html">
           <img src="./img/logo.png" alt="" />
         </a>
       </div>
-      <div class="menuWrapper">
-        <img src="./img/CategoryIcon.png" alt="" />
-      </div>
     </div>
 
-    <h3>등록된 보호소</h3><br>
+    <h3>등록된 보호소</h3>
+    <br />
     <div class="list">
       <a href="./seoul_seocho/infoView_seocho.html">
         <div class="box">
           <span class="contents">
-            <br><span class="dog">🐶</span><br>
-            서울 서초구<br>
-            서초 유기견 보호 센터<br>
+            <br /><span class="dog">🐶</span><br />
+            서울 서초구<br />
+            서초 유기견 보호 센터<br />
           </span>
         </div>
       </a>
       <a href="./seoul_songpa/infoView_songpa.html">
         <div class="box">
           <span class="contents">
-            <br><span class="dog">🐶</span><br>
-            서울 송파구<br>
-            송파구 유기견 보호 센터<br>
+            <br /><span class="dog">🐶</span><br />
+            서울 송파구<br />
+            송파구 유기견 보호 센터<br />
           </span>
         </div>
       </a>
       <a href="./gyeonggi_seongnam/infoView_seongnam.html">
         <div class="box">
           <span class="contents">
-            <br><span class="dog">🐶</span><br>
-            경기도 성남시<br>
-            성남 유기견 보호 센터<br>
+            <br /><span class="dog">🐶</span><br />
+            경기도 성남시<br />
+            성남 유기견 보호 센터<br />
           </span>
         </div>
       </a>
       <a href="./gyeonggi_hanam/infoView_hanam.html">
         <div class="box">
           <span class="contents">
-            <br><span class="dog">🐶</span><br>
-            경기도 하남시<br>
-            하남 유기견 보호 센터<br>
+            <br /><span class="dog">🐶</span><br />
+            경기도 하남시<br />
+            하남 유기견 보호 센터<br />
           </span>
         </div>
       </a>
       <a href="./gyeonggi_yongin/infoView_yongin.html">
         <div class="box">
           <span class="contents">
-            <br><span class="dog">🐶</span><br>
-            경기도 용인시<br>
-            용인 유기견 보호 센터<br>
+            <br /><span class="dog">🐶</span><br />
+            경기도 용인시<br />
+            용인 유기견 보호 센터<br />
           </span>
         </div>
       </a>
       <a href="./gyeonggi_pyeongtaek/infoView_pyeongtaek.html">
         <div class="box">
           <span class="contents">
-            <br><span class="dog">🐶</span><br>
-            경기도 평택시<br>
-            평택 유기견 보호 센터<br>
+            <br /><span class="dog">🐶</span><br />
+            경기도 평택시<br />
+            평택 유기견 보호 센터<br />
           </span>
         </div>
       </a>
       <a href="./chungnam_seosan/infoView_seosan.html">
         <div class="box">
           <span class="contents">
-            <br><span class="dog">🐶</span><br>
-            충청남도 서산시<br>
-            서산 유기견 보호 센터<br>
+            <br /><span class="dog">🐶</span><br />
+            충청남도 서산시<br />
+            서산 유기견 보호 센터<br />
           </span>
         </div>
       </a>
       <a href="./chungbuk_chungju/infoView_chungju.html">
         <div class="box">
           <span class="contents">
-            <br><span class="dog">🐶</span><br>
-            충청북도 충주시<br>
-            충주 유기견 보호 센터<br>
+            <br /><span class="dog">🐶</span><br />
+            충청북도 충주시<br />
+            충주 유기견 보호 센터<br />
           </span>
         </div>
       </a>
       <a href="./jeolnam_gangjin/infoView_gangjin.html">
         <div class="box">
           <span class="contents">
-            <br><span class="dog">🐶</span><br>
-            전라남도 강진군<br>
-            강진 유기견 보호 센터<br>
+            <br /><span class="dog">🐶</span><br />
+            전라남도 강진군<br />
+            강진 유기견 보호 센터<br />
           </span>
         </div>
       </a>
       <a href="./jeolbuk_gunsan/infoView_gunsan.html">
         <div class="box">
           <span class="contents">
-            <br><span class="dog">🐶</span><br>
-            전라북도 군산시<br>
-            군산 유기견 보호 센터<br>
+            <br /><span class="dog">🐶</span><br />
+            전라북도 군산시<br />
+            군산 유기견 보호 센터<br />
           </span>
         </div>
       </a>
       <a href="./daegu_dalseo/infoView_daegu.html">
         <div class="box">
           <span class="contents">
-            <br><span class="dog">🐶</span><br>
-            대구 달서구<br>
-            달서 유기견 보호 센터<br>
+            <br /><span class="dog">🐶</span><br />
+            대구 달서구<br />
+            달서 유기견 보호 센터<br />
           </span>
         </div>
       </a>
       <a href="./gangwon/infoView_gangwon.html">
         <div class="box">
           <span class="contents">
-            <br><span class="dog">🐶</span><br>
-            강원도<br>
-            강원 유기견 보호 센터<br>
+            <br /><span class="dog">🐶</span><br />
+            강원도<br />
+            강원 유기견 보호 센터<br />
           </span>
         </div>
       </a>

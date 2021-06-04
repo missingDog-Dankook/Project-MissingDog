@@ -11,18 +11,56 @@
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
+    <script type="text/javascript" src="./quiz.js"></script>
+    <style type="text/css">
+      a:link {
+        color: black;
+        text-decoration: none;
+      }
+      a:visited {
+        color: black;
+        text-decoration: none;
+      }
+      a:hover {
+      }
+    </style>
     <title>Missing Dog | EDUCATION</title>
   </head>
   <body>
     <div class="mainWrapper">
       <div class="mainHeader">
+        <div class="navbar">
+          <div class="menu-button">
+            <input
+              id="dropdown-button"
+              type="checkbox"
+              class="dropdown-toggle"
+            />
+            <label class="dropdown-label" for="dropdown-button"></label>
+
+            <div class="menu-slide-from-left" id="menu">
+              <div class="inner-menu-slide-from-left">
+                <div class="button-members"></div>
+                <a href="../mainview/mainView.html">
+                  <div class="menu-options">Home</div>
+                </a>
+                <a href="../infoview/infoView_main.html">
+                  <div class="menu-options">Info</div>
+                </a>
+                <a href="../quizview/quizVideo.html">
+                  <div class="menu-options">Video</div>
+                </a>
+                <a href="../quizview/quizMain.html">
+                  <div class="menu-options">Quiz</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="logoImg">
           <a href="../quizview/quiz.html">
             <img src="./img/logo.png" alt="" />
           </a>
-        </div>
-        <div class="menuWrapper">
-          <img src="img/CategoryIcon.png" alt="" />
         </div>
       </div>
 
@@ -51,7 +89,6 @@
           <a href="#sec6">
             <span class="leftItem">반려견 필수예방접종 총정리</span>
           </a>
-        
         </div>
         <div class="contentsVideos" id="sec1">
           <div class="videoWrapper">
@@ -156,7 +193,6 @@
             </div>
           </div>
         </div>
-        
       </div>
     </div>
   </body>
